@@ -1958,12 +1958,8 @@ static const map<monster_type, band_set> bands_by_leader = {
     { MONS_MOLTEN_GARGOYLE,  { {0, 0, []() {
         return you.where_are_you == BRANCH_DESOLATION;
     }},                            {{ BAND_MOLTEN_GARGOYLES, {2, 3} }}}},
-    { MONS_LINDWURM,         { {0, 0, []() {
-        return you.where_are_you == BRANCH_VAULTS;
-    }},                            {{ BAND_LINDWURMS, {1, 3} }}}},
-    { MONS_DIRE_ELEPHANT,    { {0, 0, []() {
-        return you.where_are_you == BRANCH_VAULTS;
-    }},                            {{ BAND_DIRE_ELEPHANTS, {2, 4} }}}},
+    { MONS_IRONWHIP_BEASTMASTER, { {}, {{ BAND_DIRE_ELEPHANTS, {1, 3}, true },
+                                        { BAND_LINDWURMS, {1, 4}, true}}}},
 
 
     // special-cased band-sizes

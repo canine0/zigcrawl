@@ -656,6 +656,10 @@ int make_mons_weapon(monster_type type, int level, bool melee_only)
             { { { WPN_GREAT_MACE,       3 },
                 { WPN_DIRE_FLAIL,       2 },
         } } },
+        { MONS_IRONWHIP_BEASTMASTER,
+            { { { WPN_GIANT_CLUB,       9 },
+                { WPN_DEMON_WHIP,       1 },
+        } } },
         { MONS_ETTIN,
             { { { WPN_DIRE_FLAIL,       9 },
                 { WPN_GREAT_MACE,       1 },
@@ -1484,6 +1488,7 @@ static void _give_ammo(monster* mon, int level, bool mons_summoned)
 
         case MONS_DRACONIAN_KNIGHT:
         case MONS_GNOLL:
+        case MONS_IRONWHIP_BEASTMASTER:
             if (!level || !one_chance_in(20))
                 break;
             // deliberate fall-through to harold

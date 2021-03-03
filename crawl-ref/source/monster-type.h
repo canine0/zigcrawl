@@ -1099,6 +1099,7 @@ enum monster_type                      // env.mons[].type
     MONS_ANIMATED_ARMOUR,
     MONS_ICEGRIP_STALWART,
     MONS_IRONBOUND_THUNDERHULK,
+    MONS_IRONWHIP_BEASTMASTER,
 #endif
 
     NUM_MONSTERS,               // used for polymorph

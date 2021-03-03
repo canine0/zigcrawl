@@ -406,17 +406,16 @@ static const pop_entry pop_vaults[] =
 
   // Easy enemies:
   {  1,  4,  650, FALL, MONS_UGLY_THING },
-  {  1,  4,  625, FALL, MONS_LINDWURM },
   {  1,  4,  350, FALL, MONS_CENTAUR_WARRIOR },
   {  1,  4,  350, FALL, MONS_YAKTAUR },
   {  1,  4,  200, FALL, MONS_BOULDER_BEETLE },
   {  1,  4,  100, FALL, MONS_BOGGART },
   {  1,  4,  125, FALL, MONS_HARPY },
 
+  {  1,  4,  200, FLAT, MONS_IRONWHIP_BEASTMASTER },
+  {  1,  4,  800, FALL, MONS_IRONWHIP_BEASTMASTER },
   {  1,  4,  400, FLAT, MONS_SLIME_CREATURE },
   {  1,  4,  400, FALL, MONS_SLIME_CREATURE },
-  {  1,  4,  200, FLAT, MONS_DIRE_ELEPHANT },
-  {  1,  4,  200, FALL, MONS_DIRE_ELEPHANT },
   {  1,  4, 1250, FLAT, MONS_VAULT_SENTINEL },
   // Harder enemies:
   {  1,  4,  150, FLAT, MONS_ENTROPY_WEAVER },
