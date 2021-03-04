@@ -1488,8 +1488,11 @@ static void _give_ammo(monster* mon, int level, bool mons_summoned)
 
         case MONS_DRACONIAN_KNIGHT:
         case MONS_GNOLL:
-        case MONS_IRONWHIP_BEASTMASTER:
             if (!level || !one_chance_in(20))
+                break;
+            // deliberate fall-through
+        case MONS_IRONWHIP_BEASTMASTER:
+            if (!one_chance_in(10))
                 break;
             // deliberate fall-through to harold
 
