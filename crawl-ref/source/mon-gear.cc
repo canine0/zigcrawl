@@ -652,10 +652,7 @@ int make_mons_weapon(monster_type type, int level, bool melee_only)
         } } },
         { MONS_TWO_HEADED_OGRE,         { DOUBLE_OGRE_WEAPONS } },
         { MONS_IRON_GIANT,              { DOUBLE_OGRE_WEAPONS } },
-        { MONS_IRONBOUND_THUNDERHULK,
-            { { { WPN_GREAT_MACE,       3 },
-                { WPN_DIRE_FLAIL,       2 },
-        } } },
+        { MONS_IRONBOUND_THUNDERHULK,   { IRON_WEAPONS } },
         { MONS_IRONWHIP_BEASTMASTER,
             { { { WPN_GIANT_CLUB,       9 },
                 { WPN_DEMON_WHIP,       1 },
@@ -1875,6 +1872,7 @@ int make_mons_armour(monster_type type, int level)
         item.sub_type  = random_choose(ARM_CHAIN_MAIL, ARM_PLATE_ARMOUR);
         break;
 
+    case MONS_IRONBOUND_THUNDERHULK:
     case MONS_VAULT_SENTINEL:
     case MONS_IRONBRAND_CONVOKER:
     case MONS_ICEGRIP_STALWART:
