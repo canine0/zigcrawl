@@ -235,6 +235,17 @@ static const map<job_type, job_def> job_data =
       { SK_STEALTH, 2 }, },
 } },
 
+{ JOB_SLIME_KNIGHT, {
+    "SK", "Slime Knight",
+    4, 4, 4,
+    { SP_PALENTONGA, SP_TROLL, SP_NAGA, SP_BASE_DRACONIAN,
+      SP_DEMONSPAWN, SP_OCTOPODE, SP_OGRE },
+    { "leather armour" },
+    WCHOICE_PLAIN,
+    { { SK_FIGHTING, 3 }, { SK_ARMOUR, 2 }, { SK_DODGING, 2 },
+      { SK_WEAPON, 2 }, },
+} },
+
 { JOB_TRANSMUTER, {
     "Tm", "Transmuter",
     2, 5, 5,

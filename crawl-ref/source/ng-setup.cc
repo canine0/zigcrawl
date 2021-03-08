@@ -275,6 +275,17 @@ void give_items_skills(const newgame_def& ng)
             you.skills[SK_ARMOUR]++;
         break;
     }
+    case JOB_SLIME_KNIGHT:
+    {
+        you.religion = GOD_JIYVA;
+        you.piety = 33;
+
+        if (species_apt(SK_ARMOUR) < species_apt(SK_DODGING))
+            you.skills[SK_DODGING]++;
+        else
+            you.skills[SK_ARMOUR]++;
+        break;
+    }
     case JOB_ABYSSAL_KNIGHT:
         you.religion = GOD_LUGONU;
         if (!crawl_state.game_is_sprint())
@@ -292,7 +303,7 @@ void give_items_skills(const newgame_def& ng)
         break;
     }
 
-    if (you.char_class == JOB_ABYSSAL_KNIGHT)
+    if (you.char_class == JOB_ABYSSAL_KNIGHT || you.char_class == JOB_SLIME_KNIGHT)
         newgame_make_item(OBJ_WEAPONS, ng.weapon, 1, +1);
     else if (you.char_class == JOB_CHAOS_KNIGHT)
         newgame_make_item(OBJ_WEAPONS, ng.weapon, 1, 0, SPWPN_CHAOS);
