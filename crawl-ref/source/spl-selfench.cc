@@ -204,6 +204,25 @@ spret cast_transform(int pow, transformation which_trans, bool fail)
         return spret::abort;
     }
 
+    /* Scuffed code, but it works. Randomly determines player's resistances
+    to fire and cold in panlord form. It's OK to roll these every time the
+    player casts a transformation since they're only actually used when the
+    player is in panlord form. See transform.cc for more pain.
+    This also determines which random abilities the player obtains. Each
+    ability has a 20% chance to be individually selected, making getting
+    more than three or four a statistical anomaly, but getting at least one
+    a pretty high chance. Damnation is 10% instead since it's so good.*/
+    you.props[PANFORM_RF_KEY] = random_range(-1, 3);
+    you.props[PANFORM_RC_KEY] = random_range(-1, 3);
+    you.props[PANFORM_FROST_KEY] = one_chance_in(5);
+    you.props[PANFORM_POWER_KEY] = one_chance_in(5);
+    you.props[PANFORM_MEPH_KEY] = one_chance_in(5);
+    you.props[PANFORM_LIGHTNING_KEY] = one_chance_in(5);
+    you.props[PANFORM_ACID_KEY] = one_chance_in(5);
+    you.props[PANFORM_STEAM_KEY] = one_chance_in(5);
+    you.props[PANFORM_BLINK_KEY] = one_chance_in(5);
+    you.props[PANFORM_DAMNATION_KEY] = one_chance_in(10);
+
     fail_check();
     transform(pow, which_trans);
     return spret::success;

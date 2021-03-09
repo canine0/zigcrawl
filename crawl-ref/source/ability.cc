@@ -3472,13 +3472,30 @@ bool player_has_ability(ability_type abil, bool include_unusable)
         // red draconian handled before the switch
         return you.form == transformation::dragon
                             && dragon_form_dragon_type() == MONS_FIRE_DRAGON;
+
+    // PHYSICAL PAIN BELOW
+    case ABIL_BREATHE_POWER:
+        return you.form == transformation::panlord && you.props[PANFORM_POWER_KEY].get_bool();
+    case ABIL_BREATHE_LIGHTNING:
+        return you.form == transformation::panlord && you.props[PANFORM_LIGHTNING_KEY].get_bool();
+    case ABIL_BREATHE_FROST:
+        return you.form == transformation::panlord && you.props[PANFORM_FROST_KEY].get_bool();
+    case ABIL_BREATHE_ACID:
+        return you.form == transformation::panlord && you.props[PANFORM_ACID_KEY].get_bool();
+    case ABIL_BREATHE_MEPHITIC:
+        return you.form == transformation::panlord && you.props[PANFORM_MEPH_KEY].get_bool();
+    case ABIL_BREATHE_STEAM:
+        return you.form == transformation::panlord && you.props[PANFORM_STEAM_KEY].get_bool();
+
     // mutations
     case ABIL_DAMNATION:
-        return you.get_mutation_level(MUT_HURL_DAMNATION);
+        return you.get_mutation_level(MUT_HURL_DAMNATION)
+        || you.form == transformation::panlord && you.props[PANFORM_DAMNATION_KEY].get_bool();
     case ABIL_END_TRANSFORMATION:
         return you.duration[DUR_TRANSFORMATION] && !you.transform_uncancellable;
     case ABIL_BLINK:
-        return you.get_mutation_level(MUT_BLINK);
+        return you.get_mutation_level(MUT_BLINK)
+        || you.form == transformation::panlord && you.props[PANFORM_BLINK_KEY].get_bool();;
     // TODO: other god abilities
     case ABIL_RENOUNCE_RELIGION:
         return !you_worship(GOD_NO_GOD);

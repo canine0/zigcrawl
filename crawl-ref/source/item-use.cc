@@ -2268,6 +2268,11 @@ void drink(item_def* potion)
         mpr("You cannot drink potions in your current state!");
         return;
     }
+    else if (you.form == transformation::panlord)
+    {
+        mpr("Your chaotic body would reject that.");
+        return;
+    }
 
     if (you.berserk())
     {

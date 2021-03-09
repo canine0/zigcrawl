@@ -5963,6 +5963,8 @@ int player::gdr_perc() const
     {
     case transformation::dragon:
         return 34; // base AC 8
+    case transformation::panlord:
+        return 35;
     case transformation::statue:
         return 39; // like plate (AC 10)
     case transformation::tree:
@@ -6032,6 +6034,8 @@ mon_holy_type player::holiness(bool temp) const
         holi = MH_UNDEAD;
     else if (species == SP_GARGOYLE)
         holi = MH_NONLIVING;
+    else if (you.form == transformation::panlord)
+        holi = MH_DEMONIC;
     else
         holi = MH_NATURAL;
 

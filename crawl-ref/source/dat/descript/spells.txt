@@ -1014,6 +1014,18 @@ Pain spell
 Inflicts an extremely painful injury upon one living creature. The caster
 suffers minor damage from the backlash.
 %%%%
+Pandemonium Form spell
+
+Transforms the caster into a lord of Pandemonium, taking a portion of their
+sanity in the process. The caster's worn items and weapons are melded, but
+they gain resistances to poison, miasma, electricity, and negative energy. They
+also gain powerful but chaotic melee attacks and innate flight, and a set of
+random breath weapons, the ability to teleport short distances, or even the
+power to hurl hellfire. However, the caster's resistances to fire and cold are
+completely random, and the caster may end up vulnerable instead of resistant to
+either or both elements. The caster also may not consume potions or exit the
+form once they are in it, and are vulnerable to holy energy and silver.
+%%%%
 Paralyse spell
 
 Prevents a creature from taking any action for a short time.

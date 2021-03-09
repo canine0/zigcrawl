@@ -3396,6 +3396,17 @@ static const struct spell_desc spelldata[] =
 },
 
 {
+    SPELL_PANDEMONIUM_FORM, "Pandemonium Form",
+    spschool::transmutation,
+    spflag::no_ghost | spflag::chaotic | spflag::helpful | spflag::utility,
+    9,
+    150,
+    -1, -1,
+    5, 0,
+    TILEG_PANDEMONIUM_FORM,
+},
+
+{
     SPELL_NO_SPELL, "nonexistent spell",
     spschool::none,
     spflag::testing,

@@ -246,6 +246,17 @@ static const form_entry formdata[] =
     SPWPN_NORMAL, GREEN, "", { "nip at", "bite", "gouge", "chomp" },
     FC_DEFAULT, FC_ENABLE, FC_ENABLE, true, false,
     "roar", 4, "foreclaw", "", "bow your heads before", "flesh"
-}
+},
+
+{
+    transformation::panlord, MONS_PANDEMONIUM_LORD, "P.Lord", "chaos-form", "panlord",
+    "a terrifying lord of Pandemonium!",
+    EQF_ALL, MR_RES_POISON | MR_RES_ELEC | MR_RES_MIASMA | mrd(MR_RES_NEG, 3),
+    DEFAULT_DURATION, 0, 0, SIZE_LARGE, 13,
+    10, 6, 0, true, 0, true, 13,
+    SPWPN_CHAOS, MAGENTA, "Hands?", DEFAULT_VERBS,
+    FC_ENABLE, FC_ENABLE, FC_FORBID, true, false,
+    "bellow", 7, "strange appendage", "foot", "stare unblinkingly down at", "flesh"
+},
 };
 COMPILE_CHECK(ARRAYSZ(formdata) == NUM_TRANSFORMS);

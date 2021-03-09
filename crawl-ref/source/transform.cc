@@ -26,6 +26,7 @@
 #include "mon-death.h"
 #include "mutation.h"
 #include "output.h"
+#include "player.h"
 #include "player-equip.h"
 #include "player-stats.h"
 #include "prompt.h"
@@ -696,6 +697,45 @@ public:
     bool can_offhand_punch() const override { return true; }
 };
 
+class FormPanlord : public Form
+{
+private:
+    FormPanlord() : Form(transformation::panlord) { }
+    DISALLOW_COPY_AND_ASSIGN(FormPanlord);
+public:
+    static const FormPanlord &instance() { static FormPanlord inst; return inst; }
+
+    /**
+     * Get an monster type corresponding to the transformation.
+     *
+     * (Used for console player glyphs.)
+     *
+     * @return  A monster type corresponding to the player in this form.
+     */
+    monster_type get_equivalent_mons() const override
+    {
+        return MONS_PANDEMONIUM_LORD;
+    }
+
+    /**
+     * How many levels of resistance against fire does this form provide?
+     */
+    int res_fire() const override
+    {
+        return you.props[PANFORM_RF_KEY].get_int();
+    }
+
+    /**
+     * How many levels of resistance against cold does this form provide?
+     */
+    int res_cold() const override
+    {
+        return you.props[PANFORM_RC_KEY].get_int();
+    }
+
+    bool can_offhand_punch() const override { return true; }
+};
+
 class FormLich : public Form
 {
 private:
@@ -1016,6 +1056,7 @@ static const Form* forms[] =
     &FormFungus::instance(),
     &FormShadow::instance(),
     &FormHydra::instance(),
+    &FormPanlord::instance(),
 };
 
 const Form* get_form(transformation xform)
@@ -1874,7 +1915,8 @@ bool transform(int pow, transformation which_trans, bool involuntary,
     // If you're turned into a tree, you stop taking stairs.
     stop_delay(which_trans == transformation::tree);
 
-    if (crawl_state.which_god_acting() == GOD_XOM)
+    if (crawl_state.which_god_acting() == GOD_XOM
+        || you.form == transformation::panlord) //ugh
        you.transform_uncancellable = true;
 
     // Land the player if we stopped flying.

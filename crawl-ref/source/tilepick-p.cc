@@ -503,6 +503,44 @@ tileidx_t tileidx_player()
         }
         break;
     }
+    case transformation::panlord:
+    {
+        int ptile = random_range(1, 10);
+        { // unbelievably hacky and bizarre but it does exactly what it's intended to
+          int panform_tile = random_range(1, 10);
+          if (panform_tile == 1) {
+            ch = TILEP_TRAN_PANDEMONIUM_1;
+          }
+          if (panform_tile == 2) {
+            ch = TILEP_TRAN_PANDEMONIUM_2;
+          }
+          if (panform_tile == 3) {
+            ch = TILEP_TRAN_PANDEMONIUM_3;
+          }
+          if (panform_tile == 4) {
+            ch = TILEP_TRAN_PANDEMONIUM_4;
+          }
+          if (panform_tile == 5) {
+            ch = TILEP_TRAN_PANDEMONIUM_5;
+          }
+          if (panform_tile == 6) {
+            ch = TILEP_TRAN_PANDEMONIUM_6;
+          }
+          if (panform_tile == 7) {
+            ch = TILEP_TRAN_PANDEMONIUM_7;
+          }
+          if (panform_tile == 8) {
+            ch = TILEP_TRAN_PANDEMONIUM_8;
+          }
+          if (panform_tile == 9) {
+            ch = TILEP_TRAN_PANDEMONIUM_9;
+          }
+          if (panform_tile == 10) {
+            ch = TILEP_TRAN_PANDEMONIUM_10;
+          }
+          break;
+        };
+    }
     // no special tile
     case transformation::blade_hands:
     case transformation::appendage:

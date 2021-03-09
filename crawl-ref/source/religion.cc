@@ -3978,6 +3978,8 @@ bool god_loathes_spell(spell_type spell, god_type god)
 {
     if (spell == SPELL_NECROMUTATION && is_good_god(god))
         return true;
+    if (spell == SPELL_PANDEMONIUM_FORM && is_good_god(god))
+        return true;
     if (spell == SPELL_STATUE_FORM && god == GOD_YREDELEMNUL)
         return true;
     return false;

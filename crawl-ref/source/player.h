@@ -53,6 +53,16 @@
 #define PETRIFIED_BY_KEY "petrified_by"
 #define FROZEN_RAMPARTS_KEY "frozen_ramparts_position"
 #define PALENTONGA_CURL_KEY "palentonga_curl"
+#define PANFORM_RF_KEY "resf" // this is all terrible
+#define PANFORM_RC_KEY "resc"
+#define PANFORM_FROST_KEY "frost"
+#define PANFORM_POWER_KEY "power"
+#define PANFORM_MEPH_KEY "meph"
+#define PANFORM_LIGHTNING_KEY "lightning"
+#define PANFORM_ACID_KEY "acid"
+#define PANFORM_STEAM_KEY "steam"
+#define PANFORM_BLINK_KEY "blink"
+#define PANFORM_DAMNATION_KEY "hellfire"
 
 // display/messaging breakpoints for penalties from Ru's MUT_HORROR
 #define HORROR_LVL_EXTREME  3

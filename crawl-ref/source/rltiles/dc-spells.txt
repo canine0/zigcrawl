@@ -152,6 +152,7 @@ irradiate IRRADIATE
 hydra_form HYDRA_FORM
 dragon_form DRAGON_FORM
 wereblood WEREBLOOD
+pandemonium_form PANDEMONIUM_FORM
 
 # item-based spells
 %sdir gui/spells/misc

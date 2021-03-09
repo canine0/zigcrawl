@@ -1136,6 +1136,16 @@ misc/unseen PLAYER
 
 ## Transformations
 %sdir player/transform
+pandemonium_1 TRAN_PANDEMONIUM_1
+pandemonium_2 TRAN_PANDEMONIUM_2
+pandemonium_3 TRAN_PANDEMONIUM_3
+pandemonium_4 TRAN_PANDEMONIUM_4
+pandemonium_5 TRAN_PANDEMONIUM_5
+pandemonium_6 TRAN_PANDEMONIUM_6
+pandemonium_7 TRAN_PANDEMONIUM_7
+pandemonium_8 TRAN_PANDEMONIUM_8
+pandemonium_9 TRAN_PANDEMONIUM_9
+pandemonium_10 TRAN_PANDEMONIUM_10
 bat_form TRAN_BAT
 spider_form TRAN_SPIDER
 pig_form TRAN_PIG

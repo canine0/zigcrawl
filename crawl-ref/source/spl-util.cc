@@ -1098,6 +1098,7 @@ bool spell_is_form(spell_type spell)
         case SPELL_SPIDER_FORM:
         case SPELL_STATUE_FORM:
         case SPELL_NECROMUTATION:
+        case SPELL_PANDEMONIUM_FORM:
             return true;
         default:
             return false;

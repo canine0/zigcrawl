@@ -2244,6 +2244,9 @@ static spret _do_cast(spell_type spell, int powc, const dist& spd,
     case SPELL_NECROMUTATION:
         return cast_transform(powc, transformation::lich, fail);
 
+    case SPELL_PANDEMONIUM_FORM:
+        return cast_transform(powc, transformation::panlord, fail);
+
     case SPELL_SWIFTNESS:
         return cast_swiftness(powc, fail);
 
