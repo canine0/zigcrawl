@@ -1040,6 +1040,7 @@ int player_spec_fire();
 int player_spec_hex();
 int player_spec_poison();
 int player_spec_summ();
+int player_spec_eldr();
 
 int player_adjust_evoc_power(const int power, int enhancers = 0);
 

@@ -510,6 +510,9 @@ static int _spell_enhancement(spell_type spell)
     if (typeflags & spschool::poison)
         enhanced += player_spec_poison();
 
+    if (typeflags & spschool::eldritch)
+        enhanced += player_spec_eldr();
+
     if (typeflags & spschool::necromancy)
         enhanced += player_spec_death();
 

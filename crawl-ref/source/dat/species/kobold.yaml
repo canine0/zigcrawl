@@ -23,6 +23,7 @@ aptitudes:
   shields: -2
   invocations: 1
   evocations: 2
+  eldritch_magic: 1
 
 size: small
 str: 5

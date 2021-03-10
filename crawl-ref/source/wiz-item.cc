@@ -1209,8 +1209,6 @@ static void _debug_acquirement_stats(FILE *ostat)
                 "earth magic",
                 "air magic",
             };
-            // + 2 because we have the exponent bits plus "none"
-            COMPILE_CHECK(ARRAYSZ(names) == SPSCHOOL_LAST_EXPONENT + 2);
 
             for (int i = 0; i <= SPSCHOOL_LAST_EXPONENT; ++i)
             {

@@ -505,7 +505,7 @@ static const struct spell_desc spelldata[] =
 
 {
     SPELL_SUMMON_HORRIBLE_THINGS, "Summon Horrible Things",
-    spschool::summoning,
+    spschool::summoning | spschool::eldritch,
     spflag::unholy | spflag::chaotic | spflag::mons_abjure,
     8,
     200,
@@ -516,7 +516,7 @@ static const struct spell_desc spelldata[] =
 
 {
     SPELL_MALIGN_GATEWAY, "Malign Gateway",
-    spschool::summoning | spschool::translocation,
+    spschool::eldritch,
     spflag::unholy | spflag::chaotic,
     7,
     200,
@@ -3375,8 +3375,8 @@ static const struct spell_desc spelldata[] =
 
 {
     SPELL_ANIMATE_ARMOUR, "Animate Armour",
-    spschool::summoning | spschool::earth,
-    spflag::none,
+    spschool::summoning | spschool::eldritch,
+    spflag::chaotic,
     4,
     50,
     -1, -1,

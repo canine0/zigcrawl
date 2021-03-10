@@ -33,6 +33,7 @@ ice_magic ICE_MAGIC_ON
 air_magic AIR_MAGIC_ON
 earth_magic EARTH_MAGIC_ON
 poison_magic POISON_MAGIC_ON
+eldritch_magic ELDRITCH_MAGIC_ON
 invocations INVOCATIONS_ON
 evocations EVOCATIONS_ON
 %sdir gui/skills/gods
@@ -88,6 +89,7 @@ ice_magic ICE_MAGIC_FOCUS
 air_magic AIR_MAGIC_FOCUS
 earth_magic EARTH_MAGIC_FOCUS
 poison_magic POISON_MAGIC_FOCUS
+eldritch_magic ELDRITCH_MAGIC_FOCUS
 invocations INVOCATIONS_FOCUS
 evocations EVOCATIONS_FOCUS
 %sdir gui/skills/gods
@@ -143,6 +145,7 @@ ice_magic ICE_MAGIC_OFF
 air_magic AIR_MAGIC_OFF
 earth_magic EARTH_MAGIC_OFF
 poison_magic POISON_MAGIC_OFF
+eldritch_magic ELDRITCH_MAGIC_OFF
 invocations INVOCATIONS_OFF
 evocations EVOCATIONS_OFF
 %sdir gui/skills/gods
@@ -198,6 +201,7 @@ ice_magic ICE_MAGIC_INACTIVE
 air_magic AIR_MAGIC_INACTIVE
 earth_magic EARTH_MAGIC_INACTIVE
 poison_magic POISON_MAGIC_INACTIVE
+eldritch_magic ELDRITCH_MAGIC_INACTIVE
 invocations INVOCATIONS_INACTIVE
 evocations EVOCATIONS_INACTIVE
 %sdir gui/skills/gods
@@ -253,6 +257,7 @@ ice_magic ICE_MAGIC_MAX
 air_magic AIR_MAGIC_MAX
 earth_magic EARTH_MAGIC_MAX
 poison_magic POISON_MAGIC_MAX
+eldritch_magic ELDRITCH_MAGIC_MAX
 invocations INVOCATIONS_MAX
 evocations EVOCATIONS_MAX
 %sdir gui/skills/gods

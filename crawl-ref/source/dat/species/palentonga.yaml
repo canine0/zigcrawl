@@ -38,6 +38,7 @@ aptitudes:
   poison_magic: -2
   invocations: 1
   evocations: -1
+  eldritch_magic: -2
 size: large
 str: 11
 int: 8

@@ -39,6 +39,7 @@ aptitudes:
   poison_magic: -1
   invocations: False
   evocations: -1
+  eldritch_magic: -1
 str: 9
 int: 10
 dex: 9

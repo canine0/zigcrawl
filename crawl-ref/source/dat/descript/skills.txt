@@ -261,6 +261,16 @@ spells in this school. Many spells belong to a combination of several schools,
 in which case spellcasting success and power will depend on the average skill
 in these schools.
 %%%%
+Eldritch Magic
+
+Eldritch Magic provides spells which allow the caster to access the cosmic,
+unpredictable forces underlying this world - for better or for worse.
+
+Being skilled in Eldritch Magic increases the success rate and spell power of
+spells in this school. Many spells belong to a combination of several schools,
+in which case spellcasting success and power will depend on the average skill
+in these schools.
+%%%%
 Invocations
 
 Your Invocations skill affects the likelihood that an attempt to use divine

@@ -1674,6 +1674,11 @@ int player_spec_summ()
     return 0;
 }
 
+int player_spec_eldr()
+{
+    return 0;
+}
+
 int player_spec_poison()
 {
     int sp = 0;

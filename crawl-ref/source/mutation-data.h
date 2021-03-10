@@ -1856,6 +1856,14 @@ static const mutation_def mut_data[] =
   {"You can once more study and cast Poison magic.", "", ""},
 },
 
+{ MUT_NO_ELDRITCH_MAGIC, 0, 1, mutflag::bad, false,
+  "no eldritch magic",
+
+  {"You cannot study or cast Eldritch magic.", "", ""},
+  {"You can no longer study or cast Eldritch magic.", "", ""},
+  {"You can once more study and cast Eldritch magic.", "", ""},
+},
+
 { MUT_NO_SUMMONING_MAGIC, 0, 1, mutflag::bad, false,
   "no summoning magic",
 

@@ -33,6 +33,7 @@ aptitudes:
   transmutations: 1
   fire_magic: -2
   poison_magic: -1
+  eldritch_magic: 2
   invocations: -1
   evocations: -1
 undead_type: US_SEMI_UNDEAD

@@ -845,6 +845,8 @@ const char* spelltype_short_name(spschool which_spelltype)
         return "Erth";
     case spschool::air:
         return "Air";
+    case spschool::eldritch:
+        return "Eldr";
     case spschool::random:
         return "Rndm";
     default:
@@ -878,6 +880,8 @@ const char* spelltype_long_name(spschool which_spelltype)
         return "Earth";
     case spschool::air:
         return "Air";
+    case spschool::eldritch:
+        return "Eldritch";
     case spschool::random:
         return "Random";
     default:
@@ -900,6 +904,7 @@ skill_type spell_type2skill(spschool spelltype)
     case spschool::poison:         return SK_POISON_MAGIC;
     case spschool::earth:          return SK_EARTH_MAGIC;
     case spschool::air:            return SK_AIR_MAGIC;
+    case spschool::eldritch:       return SK_ELDRITCH_MAGIC;
 
     default:
         dprf("spell_type2skill: called with unmapped spell school %u"
@@ -924,6 +929,7 @@ spschool skill2spell_type(skill_type spell_skill)
     case SK_POISON_MAGIC:    return spschool::poison;
     case SK_EARTH_MAGIC:     return spschool::earth;
     case SK_AIR_MAGIC:       return spschool::air;
+    case SK_ELDRITCH_MAGIC:  return spschool::eldritch;
 
     default:
         return spschool::none;
@@ -1684,7 +1690,8 @@ static const mutation_type arcana_sacrifice_map[] = {
     MUT_NO_TRANSLOCATION_MAGIC,
     MUT_NO_POISON_MAGIC,
     MUT_NO_EARTH_MAGIC,
-    MUT_NO_AIR_MAGIC
+    MUT_NO_AIR_MAGIC,
+    MUT_NO_ELDRITCH_MAGIC,
 };
 
 /**

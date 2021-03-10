@@ -35,6 +35,7 @@ aptitudes:
   earth_magic: -1
   poison_magic: -1
   evocations: 1
+  eldritch_magic: -1
 size: little
 str: 4
 int: 9

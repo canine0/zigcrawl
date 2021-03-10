@@ -7656,7 +7656,7 @@ local skill_list = {"Fighting","Short Blades","Long Blades","Axes","Maces & Flai
                 "Invocations","Evocations","Stealth","Spellcasting",
                 "Conjurations","Hexes","Charms","Summonings","Necromancy",
                 "Translocations","Transmutations","Fire Magic","Ice Magic",
-                "Air Magic","Earth Magic","Poison Magic"}
+                "Air Magic","Earth Magic","Poison Magic","Eldritch Magic"}
 
 function choose_single_skill(sk)
   you.train_skill(sk, 1)

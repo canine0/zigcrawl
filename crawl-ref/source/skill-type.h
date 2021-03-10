@@ -52,7 +52,8 @@ enum skill_type
     SK_AIR_MAGIC,
     SK_EARTH_MAGIC,
     SK_POISON_MAGIC,
-    SK_LAST_MAGIC = SK_POISON_MAGIC,
+    SK_ELDRITCH_MAGIC, // idgaf about save compatibility
+    SK_LAST_MAGIC = SK_ELDRITCH_MAGIC,
     SK_INVOCATIONS,
     SK_EVOCATIONS,
     SK_LAST_SKILL = SK_EVOCATIONS,

@@ -752,6 +752,7 @@ void hints_gained_new_skill(skill_type skill)
     case SK_AIR_MAGIC:
     case SK_EARTH_MAGIC:
     case SK_POISON_MAGIC:
+    case SK_ELDRITCH_MAGIC:
         learned_something_new(HINT_GAINED_MAGICAL_SKILL);
         break;
 

@@ -106,6 +106,7 @@ static const char *skill_titles[NUM_SKILLS][7] =
     {"Air Magic",      "Gusty",         "Zephyrmancer",    "Stormcaller",     "Cloud Mage",     "Meteorologist", "Air"},
     {"Earth Magic",    "Digger",        "Geomancer",       "Earth Mage",      "Metallomancer",  "Petrodigitator", "Erth"},
     {"Poison Magic",   "Stinger",       "Tainter",         "Polluter",        "Contaminator",   "Envenomancer", "Pois"},
+    {"Eldritch Magic", "Ostracized",    "Unforgiven",      "Occultist",       "Warlock",        "Doomcaller",  "Eldr"},
 
     // These titles apply to atheists only, worshippers of the various gods
     // use the god titles instead, depending on piety or, in Gozag's case, gold.
@@ -1934,6 +1935,8 @@ bool is_useless_skill(skill_type skill)
             && you.get_mutation_level(MUT_NO_NECROMANCY_MAGIC))
         || (skill == SK_POISON_MAGIC
             && you.get_mutation_level(MUT_NO_POISON_MAGIC))
+        || (skill == SK_ELDRITCH_MAGIC
+            && you.get_mutation_level(MUT_NO_ELDRITCH_MAGIC))
         || (skill == SK_SUMMONINGS
             && you.get_mutation_level(MUT_NO_SUMMONING_MAGIC))
         || (skill == SK_TRANSLOCATIONS

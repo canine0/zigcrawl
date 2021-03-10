@@ -34,6 +34,7 @@ aptitudes:
   air_magic: -2
   poison_magic: -1
   invocations: 3
+  eldritch_magic: -1
 str: 10
 int: 8
 dex: 6

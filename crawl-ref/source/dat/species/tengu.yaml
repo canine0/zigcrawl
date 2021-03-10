@@ -34,6 +34,7 @@ aptitudes:
   air_magic: 3
   earth_magic: -3
   invocations: -1
+  eldritch_magic: -1
 str: 8
 int: 8
 dex: 9

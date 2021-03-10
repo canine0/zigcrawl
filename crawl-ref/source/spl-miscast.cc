@@ -570,6 +570,60 @@ static const map<spschool, miscast_datum> miscast_effects = {
             nullptr,
         },
     },
+    {
+        spschool::eldritch, //functionally identical to tloc, flavor fits and it's good enough for me
+        {
+            BEAM_NONE,
+            {
+                "You feel doomed",
+                "Your stomach lurches",
+                "You feel the urge to throw up",
+                "You hallucinate",
+                "You experience mild euphoria",
+                "Strange energies run through your body",
+                "The world appears momentarily distorted",
+                "You feel homesick",
+                "Reality bends around you",
+                "Reality twists in upon itself",
+                "Reality warps crazily around you",
+        },
+        {
+            "The air around @the_monster@ crackles with energy",
+            "@The_monster@ jerks violently for a moment",
+            "@The_monster@ suddenly screams in horror at something behind you",
+            "@The_monster@ appears momentarily distorted",
+            "@The_monster@ panics",
+            "@The_monster@ holds back vomit",
+            "Reality bends around @the_monster@",
+            "Reality warps around @the_monster@",
+            "Reality warps crazily around @the_monster@",
+        },
+        {
+            "The reality-fabric around something crackles with energy",
+            "A piece of empty space twists and distorts",
+            "A starry rift temporarily opens in the fabric of reality",
+        },
+        [] (actor& target, actor* source, miscast_source_info /*mc_info*/,
+            int dam, string /*cause*/) {
+
+            if (target.is_player())
+            {
+                // number arbitrarily chosen & needs more playtesting
+                const int dur = div_rand_round(dam, 2);
+                you.set_duration(DUR_LOCKED_DOWN, dur, dur,
+                                 "You are magically locked in place.");
+            }
+            else
+            {
+                // TODO: monster version? something else?
+                 target.as_monster()->add_ench(
+                     mon_enchant(ENCH_DIMENSION_ANCHOR,
+                                 0, source, dam * BASELINE_DELAY));
+            }
+        }
+
+    },
+  },
 };
 
 // Spell miscasts, contamination pluss the miscast effect

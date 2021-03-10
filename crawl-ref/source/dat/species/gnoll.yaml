@@ -38,6 +38,7 @@ aptitudes:
   poison_magic: 6
   invocations: 9
   evocations: 8
+  eldritch_magic: 6
 str: 10
 int: 10
 dex: 10

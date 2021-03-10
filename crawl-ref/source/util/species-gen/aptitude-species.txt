@@ -26,6 +26,7 @@
     {{{enum}, SK_AIR_MAGIC,      {air_magic}}},
     {{{enum}, SK_EARTH_MAGIC,    {earth_magic}}},
     {{{enum}, SK_POISON_MAGIC,   {poison_magic}}},
+    {{{enum}, SK_ELDRITCH_MAGIC, {eldritch_magic}}},
     {{{enum}, SK_INVOCATIONS,    {invocations}}},
     {{{enum}, SK_EVOCATIONS,     {evocations}}},
 #if TAG_MAJOR_VERSION == 34

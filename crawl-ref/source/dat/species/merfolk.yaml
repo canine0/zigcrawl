@@ -35,6 +35,7 @@ aptitudes:
   earth_magic: -2
   poison_magic: 1
   invocations: 1
+  eldritch_magic: -2
 can_swim: true
 str: 8
 int: 7
